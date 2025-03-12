@@ -17,12 +17,25 @@
             <p class="logo-caption" alt="Homework Buddy Caption">Homework Buddy</p>
         </div>
         <nav>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Subjects</a></li>
                 <li><a href="#">Games</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="https://www.linkedin.com/in/elena-pagano-24000075" target="_blank">Contact</a></li>
+                <li class="login">
+                    <a href="#" id="login-link">Login</a>
+                    <div id="login-form" style="display: none;">
+                        <form action="#">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password">
+                            <button type="submit">Login</button>
+                        </form>
+                        <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+                    </div>
+                </li>
             </ul>
             <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
                 <span></span>
@@ -36,9 +49,9 @@
         <h1>About <span class="highlight">Homework Buddy</span></h1>
 
         <section class="about-content">
-          <div class="about-image-container">
-            <img src="images/hb-buddy-logo.png" alt="Image representing Homework Buddy" class="about-image">
-        </div>
+            <div class="about-image-container">
+                <img src="images/hb-buddy-logo.png" alt="Image representing Homework Buddy" class="about-image">
+            </div>
             <div class="about-text">
                 <p><strong>Welcome!</strong> Here, you can learn more about how this website was created and its mission.</p>
                 <p>Homework Buddy is a free and accessible website designed specifically for children. Its goal is to provide a fun and engaging space where kids can learn, write, and explore resources related to their schoolwork.</p>
