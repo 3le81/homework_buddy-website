@@ -196,3 +196,62 @@ footer {
         transform: rotate(-45deg) translate(7px, -7px);
     }
 }
+
+
+/* ABOUT PAGE */
+.about-image {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-text strong {
+    color: #6699ff;
+    font-size: 1.05em;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    list-style-type: none;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.about-text li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: #6699ff;
+    border-radius: 50%;
+}
