@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework Buddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Homework Buddy provides easy-to-access homework help for students.">
+  <link rel="icon" href="favicon-logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/hb-buddy-logo.png" alt="Homework Buddy Logo">
+            <p class="logo-caption" alt="Homework Buddy Caption">Homework Buddy</p>
+
+          </div>
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Subjects</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://www.linkedin.com/in/elena-pagano-24000075" target="_blank">Contact</a></li>
+            <li class="login">
+              <a href="#" id="login-link">Login</a>
+              <div id="login-form" style="display: none;">
+                <form action="#">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" placeholder="Enter your username">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password">
+                  <button type="submit">Login</button>
+                </form>
+                <p>Not a member? <a href="#" id="signup-link">Sign Up</a></p>
+              </div>
+            </li>
+          </ul>
+          <button class="hamburger-menu" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </nav>
+    </header>
+    
+
+    <main role="main">
+      <h1 tabindex="0">Welcome to <span class="highlight">Homework Buddy</span>!</h1>
+      <h2 tabindex="0">Homework Help, Made Easy</h2>
+      <div class="container">
+        <a href="#" class="btn-main" role="button" aria-label="Get started with Homework Buddy">Get Started</a>
+      </div>
+    </main>
+
+  <!-- footer -->
+  <footer role="contentinfo">
+    <p tabindex="0">&copy; 2025 Homework Buddy created by <a href="https://www.linkedin.com/in/elena-pagano-24000075" target="_blank" aria-label="Visit Elena Pagano's LinkedIn Profile">Elena Pagano</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* Basic styles for the body */
+body {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6699ff;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo img:first-child {
+    height: 80px;
+}
+
+.logo img:last-child {
+    height: 60px;
+    margin-left: -65px;
+}
+
+.logo-caption {
+    color: #fdb934;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #fdb934;
+    border-radius: 4px;
+}
+
+nav ul li a:active {
+    font-size: smaller;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    user-select: none;
+    background: none;
+    border: none;
+    padding: 0; 
+}
+
+/* Styling for the spans inside the toggle menu */
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Active state of toggle menu for transformation */
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Toggle the menu on mobile when clicking the toggle menu */
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #6699ff;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+    text-align: center;
+    padding-top: 60px;
+}
+
+main h1, main h2 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+main h1 {
+    color: #333;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+main h2 {
+    font-weight: 80;
+    font-size: 25px;
+    margin-top: 0;
+    color: #333;
+}
+
+.highlight {
+    color: #fdb934
+}
+
+.container {
+    max-width: 940px;
+    margin: 90px auto;
+    padding: 0 10px;
+}
+
+.btn-main {
+    background-color: #6699ff;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-main:hover {
+    background-color: #fdb934;
+    border-radius: 4px;
+}
+
+.btn-main:active {
+    font-size: smaller;
+}
+
+footer {
+    background-color: #6699ff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hamburger-menu.active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
